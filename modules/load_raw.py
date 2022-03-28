@@ -7,7 +7,7 @@ def create_raw_schema():
     try:
         connection = mysql.connector.connect(host='localhost',
                                             user='root',
-                                            password='hero@123')
+                                            password='###')
 
         create_raw =  "CREATE SCHEMA sf_raw";                                   
 
@@ -61,7 +61,7 @@ def create_raw_schema():
             print("MySQL connection is closed")        
 
 def load_to_raw(evicition_df):
-    engine = create_engine("mysql+pymysql://" + "root" + ":" + "hero@123" + "@" + "localhost" + "/" + "sf_raw")
+    engine = create_engine("mysql+pymysql://" + "root" + ":" + "###" + "@" + "localhost" + "/" + "sf_raw")
     print("Opened database successfully")   
         
     try:

@@ -5,7 +5,7 @@ def run_sql_script(path):
     "host": "localhost",
     "database":"sf_raw",
     "user": "root",
-    "password": "hero@123"
+    "password": "####"
     }
 
     con = mysql.connector.connect(**host_args)

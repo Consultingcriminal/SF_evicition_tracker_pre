@@ -9,7 +9,7 @@ class stag_layer:
     
     def execute_query(self,query):
         try:
-            self.connection = mysql.connector.connect(host='localhost',user='root',password='hero@123')
+            self.connection = mysql.connector.connect(host='localhost',user='root',password='###')
             self.cursor = self.connection.cursor()
 
             if self.schema_status == False:
